@@ -1,0 +1,22 @@
+//VARIABLES (Should be imported before any other utility I want to use)
+//this makes it accessible throghout the project
+@use  'config/variables' as *;
+
+//OTHER SASS FILES
+@import 'layout/layout';
+@import 'components/header';
+@import 'components/home';
+@import 'components/buttons';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/qualification';
+@import 'components/services';
+@import 'components/portfolio';
+@import 'components/projectinmind';
+@import 'components/testimonial';
+@import 'components/contactme';
+@import 'components/footer';
+@import 'components/scrollup';
+@import 'components/scrollbar';
+@import 'components/mediaqueries';
+@import 'components/darktheme';

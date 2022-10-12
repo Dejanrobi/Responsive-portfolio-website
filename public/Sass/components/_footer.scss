@@ -1,0 +1,52 @@
+.footer{
+  padding-top: 2rem;
+
+  &__container{
+    row-gap: 3.5rem;
+  }
+
+  &__bg{
+    background-color: $first-color-second;
+    padding: 2rem 0 3rem;
+  }
+
+  &__title{
+    font-size: $h1-font-size;
+    margin-bottom: $mb-0-25;
+  }
+
+  &__subtitle{
+    font-size: $small-font-size;
+  }
+
+  &__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    &:hover{
+      color: $first-color-lighter;
+    }
+  }
+
+  &__social{
+    font-size: 1.25rem;
+    margin-right: $mb-1-5;
+
+    &:hover{
+      color: $first-color-lighter;
+    }
+  }
+
+  &__copy{
+    font-size: $smaller-font-size;
+    text-align: center;
+    color: $text-color-light;
+    margin-top: $mb-3;
+  }
+
+  &__title, &__subtitle, &__links, &__social{
+    color: #fff;
+
+  }
+}

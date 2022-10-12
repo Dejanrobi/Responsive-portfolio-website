@@ -1,0 +1,92 @@
+.slide{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+
+  &__container{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  
+}
+
+.button-prev, .button-next{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.button-prev:disabled, .button-next:disabled{
+  opacity: 0.8;
+}
+
+
+.portfolio{
+  &__container{
+    display: flex;
+    align-items: center;
+  //  margin-bottom: 25rem;
+  }
+
+  &__content{
+    text-align: center;
+    // position: absolute;
+    
+  }
+
+  &__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+  }
+
+  &__title{
+    font-size: $h3-font-size;
+    margin-bottom: $mb-0-5;
+  }
+
+  &__description{
+    margin-bottom: $mb-0-75;
+  }
+
+  &__button{
+    &:hover .button__icon{
+      transform: translateX(.25rem);
+    }
+  }
+}
+
+// .swiper-button-prev::after,
+// .swiper-button-next::after{
+//   content: '';
+// }
+
+// .swiper-portfolio-icon{
+//   font-size: 2rem;
+//   color: $first-color;
+// }
+
+// .swiper-button-prev{
+//   left: -.5rem;
+// }
+// .swiper-button-next{
+//   right: -.5rem;
+// }
+
+.button-next, .button-prev{
+  font-size: 2rem;
+  color: $first-color;
+  cursor: pointer;
+}
+
+.button-next{
+  right: -.5rem;
+}
+
+.button-prev{
+  left: -.5rem;
+}

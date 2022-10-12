@@ -1,0 +1,118 @@
+.header{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $body-color;
+
+  //===============NAV=================
+  .nav{
+    max-width: 968px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo, &__toggle{
+      color: $title-color;
+      font-weight: $font-medium;
+    }
+
+    &__logo{
+      &:hover{
+        color: $first-color;
+      }
+    }
+
+    &__toggle{
+      font-size: 1.1rem;
+      cursor: pointer;
+
+      &:hover{
+        color: $first-color;
+      }
+    }
+
+    &__menu{
+      @include phone{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $body-color;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .7s;
+
+      }
+
+      @include tablet{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $body-color;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .7s;
+      }
+    }
+
+    &__list{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    &__link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: $small-font-size;
+      color: $title-color;
+      font-weight: $font-medium;
+      transition: .3s ease;
+
+      &:hover{
+        color: $first-color;
+
+      }
+    }
+
+    &__icon{
+      font-size: 1.2rem;
+    }
+
+    &__close{
+      position: absolute;
+      right: 1.3rem;
+      top: .5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $first-color;
+    }
+  }
+
+  //Showing the menu
+  .show-menu{
+    bottom: 0;
+  }
+
+  //ACTIVE LINK
+  .active-link{
+    color: $first-color;
+  }
+
+  //whenever a nav-link has an aria-current attribute, you should change the color to first color
+  // .nav__link[aria-current="page"]{
+  //   color: $first-color;
+  // }
+}
+
+.scroll-header{
+  box-shadow: 0px -3px 4px rgba(0,0,0,.15);
+  //right bottom blur rgba()
+}
+

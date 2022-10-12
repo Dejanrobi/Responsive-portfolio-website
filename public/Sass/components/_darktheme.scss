@@ -1,0 +1,110 @@
+
+
+
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: $title-color;
+  margin-right: $mb-1;
+  cursor: pointer;
+
+  &:hover{
+    color: $first-color;
+  }
+}
+
+//DARK THEME
+$hue-color: 250; //Purple 250, Green: 142,  Blue:230, Pink:340
+
+$first-color: hsl($hue-color, 69%, 61%);
+$first-color-second: hsl($hue-color, 30%, 8%);
+$first-color-alt: hsl($hue-color, 57%, 53%);
+$first-color-lighter: hsl($hue-color, 92%, 85%);
+$title-color: hsl($hue-color, 8%, 95%);
+$text-color: hsl($hue-color, 8%, 75%); 
+$text-color-light: hsl($hue-color, 8%, 65%); 
+$input-color: hsl($hue-color, 29%, 16%); 
+$body-color: hsl($hue-color, 28%, 12%); 
+$container-color: hsl($hue-color, 29%, 16%);
+$scroll-bar-color: hsl($hue-color, 12%, 48%);
+$scroll-thumb-color: hsl($hue-color, 12%, 36%);
+
+
+
+body.dark-theme{
+  
+  color: $text-color;
+  background-color: $body-color;
+
+  h1,h2,h3,h4, .about__info-title{
+    color: $title-color;
+  }
+
+  .home__subtitle{
+    color: $text-color;
+  }
+
+  .services__content, .services__modal--content{
+    background-color: $container-color;
+  }
+
+  .project__bg{
+    background-color: $first-color-second;
+  }
+
+  .contact__content, .contact__input{
+    background-color: $input-color;
+  }
+
+  .contact__label{
+    color: $title-color;
+  }
+
+  .footer__bg{
+    background-color: $first-color-second
+  }
+
+  .header{
+    background-color: $body-color;
+  }
+
+  .nav__logo, .nav__toggle{
+    color: $title-color;
+  }
+  
+  .nav__menu{
+    background-color: $body-color;
+  }
+
+  .nav__link{
+    color: $title-color;
+  }
+
+  .change-theme{
+    color: $title-color;
+  }
+
+  .active-link{
+    color: $first-color;
+  }
+
+  
+  body::-webkit-scrollbar{
+    background-color: $scroll-bar-color;
+    width: .60rem;
+    
+    border-radius: .5rem;
+  }
+
+  body::-webkit-scrollbar-thumb{
+    background-color: $scroll-thumb-color;
+    border-radius: .5rem;
+  }
+
+
+}
+
